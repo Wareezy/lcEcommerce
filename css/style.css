@@ -1,3 +1,8 @@
+/* font family */
+h1,h2,h3,p{
+    font-family: Arapey;
+  }
+
 /* nav bar css */
 .navbar-light .navbar-nav .nav-link:hover {
     color: #fff; /* Change text color on hover */
@@ -24,13 +29,79 @@
 
 
 /* FOOTER CSS */
-.footer {
+.footerLand {
     background-color: grey;
     color: #fff; 
     text-align: center;
     position: relative;
-    margin-top:649px;
-    bottom: 0;
+    margin-top:0px;
+    bottom:0px;
     width: 100%;
     padding: 20px 0;
+  }
+
+  .footerAbout {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:900px;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .footerAdmin {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:900px;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footerCheckout {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:900px;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footerContact {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:900px;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footerProduct {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:900px;
+    bottom:0px;
+    width: 100%;
+    padding: 20px 0;
+  }
+  /* FOOTER CSS */
+
+
+
+
+  /* Landing Page css */
+  #businessName{position: absolute; top: 170px; left: 330px;font-size: 70px;}
+  #landingText{padding-bottom: 30px; padding-top: 250px; margin-right:400px;font-size: 23px;}
+  #warrenHomePic{max-width: 100%; height: 600px; margin-top:-420px; margin-left: 100px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;} 
+/* Landing page hover effect */
+  #warrenHomePic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9; 
   }
