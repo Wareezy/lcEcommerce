@@ -1,0 +1,36 @@
+/* nav bar css */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #333; /* Change background color on hover */
+    border-radius: 5px; /* Optional: add some border-radius for a rounded effect */
+    transition: 0.5s;
+    z-index: 1;
+  }
+  .logo{
+    transition: transform 0.3s, filter 0.3s;
+  }
+  .logo:hover {
+    transform: scale(1.1); /* Increases size on hover */
+    filter: grayscale(100%); /* Turns the image grayscale on hover */
+  }
+
+  .sticky {
+    position: fixed ;
+    top: 0;
+    width: 100%;
+  }
+#navBarBack{background-color: grey; margin-top: -40px; padding-bottom: 2px;padding-top: 40px;}
+#logo{max-height: 100px; margin-left: -100px;}
+
+
+/* FOOTER CSS */
+.footer {
+    background-color: grey;
+    color: #fff; 
+    text-align: center;
+    position: relative;
+    margin-top:649px;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
