@@ -47,8 +47,8 @@ function warren(){
         <td>R${item.price}</td>
         <td>${item.description}</td>
         <td><img src="${item.url}" width='300' height='300'/></td>
-        <td><button>Add</button></td>
-        <td><button>Edit</button></td>
+        <td><button id="adminAdd">Add</button></td>
+        <td><button id="adminEdit">Edit</button></td>
         <td><button class="delete" value='${index}'>Delete</button></td>
         
         
