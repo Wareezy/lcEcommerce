@@ -1,4 +1,10 @@
-/* font family */
+
+body{
+    overflow-x: hidden;
+   
+  }
+/* 
+font family */
 h1,h2,h3,p{
     font-family: Arapey;
   }
@@ -45,7 +51,7 @@ h1,h2,h3,p{
     color: #fff; 
     text-align: center;
     position: relative;
-    margin-top:900px;
+    margin-top:0px;
     bottom:0px;
     width: 100%;
     padding: 20px 0;
@@ -105,3 +111,22 @@ h1,h2,h3,p{
 /* Landing page hover effect */
   #warrenHomePic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9; 
   }
+
+
+
+  /* About Page Css */
+  #aboutPic{max-width: 100%; height: 600px; margin-top: 70px; padding-left: 40px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;}
+  #aboutPic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9;} 
+  #warrenAbout{position: absolute; top: 150px;left: 380px; font-size: 70px;}
+  #warrenAboutText{position: absolute; top: 300px;left:40px}
+
+#text3{position:absolute;top:120px}
+#text4{position:absolute;top:140px}
+#text5{position:absolute;top:230px}
+#text6{position:absolute;top:250px}
+  #goal{position: absolute; top: -40px;left: 10px; font-size: 30px;}
+  #mission{position: absolute; top: 80px;left: 10px; font-size: 30px;}
+  #vision{position: absolute; top: 190px;left: 10px; font-size: 30px;}
+
+
+
