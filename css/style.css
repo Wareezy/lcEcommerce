@@ -1,183 +1,276 @@
 
 body{
-    overflow-x: hidden;
-   
-  }
+  overflow-x: hidden;
+ 
+}
 /* 
 font family */
 h1,h2,h3,p{
-    font-family: Arapey;
-  }
+  font-family: Arapey;
+}
 
 /* nav bar css */
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #fff; 
-    background-color: #333; 
-    border-radius: 5px; 
-    transition: 0.5s;
-    z-index: 1;
-  }
-  .logo{
-    transition: transform 0.3s, filter 0.3s;
-  }
-  .logo:hover {
-    transform: scale(1.1); 
-    filter: grayscale(100%); 
-  }
+  color: #fff; 
+  background-color: #333; 
+  border-radius: 5px; 
+  transition: 0.5s;
+  z-index: 1;
+}
+.logo{
+  transition: transform 0.3s, filter 0.3s;
+}
+.logo:hover {
+  transform: scale(1.1); 
+  filter: grayscale(100%); 
+}
 
-  .sticky {
-    position: fixed ;
-    top: 0;
-    width: 100%;
-  }
+.sticky {
+  position: fixed ;
+  top: 0;
+  width: 100%;
+}
 #navBarBack{background-color: grey; margin-top: -40px; padding-bottom: 2px;padding-top: 40px;}
 #logo{max-height: 100px; margin-left: -100px;}
 
 
 /* FOOTER CSS */
 .footerLand {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:0px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:0px;
+  bottom:0px;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .footerAbout {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:0px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
-  .footerAdmin {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:900px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
+.footerAbout {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:0px;
+  bottom:0px;
+  width: 100%;
+  padding: 20px 0;
+}
+.footerAdmin {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 230px;
+}
 
-  .footerCheckout {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:900px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
+.footerCheckout {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:900px;
+  bottom:0px;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .footerContact {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:900px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
+.footerContact {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:900px;
+  bottom:0px;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .footerProduct {
-    background-color: grey;
-    color: #fff; 
-    text-align: center;
-    position: relative;
-    margin-top:900px;
-    bottom:0px;
-    width: 100%;
-    padding: 20px 0;
-  }
-  /* FOOTER CSS */
-
+.footerProduct {
+  background-color: grey;
+  color: #fff; 
+  text-align: center;
+  position: relative;
+  margin-top:200px;
+  bottom:0px;
+  width: 100%;
+  padding: 20px 0;
+}
+/* FOOTER CSS */
 
 
 
-  /* Landing Page css */
-  #businessName{position: absolute; top: 170px; left: 330px;font-size: 70px;}
-  #landingText{padding-bottom: 30px; padding-top: 250px; margin-right:400px;font-size: 23px;}
-  #warrenHomePic{max-width: 100%; height: 600px; margin-top:-420px; margin-left: 100px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;} 
+
+/* Landing Page css */
+#businessName{position: absolute; top: 170px; left: 330px;font-size: 70px;}
+#landingText{padding-bottom: 30px; padding-top: 250px; margin-right:400px;font-size: 23px;}
+#warrenHomePic{max-width: 100%; height: 600px; margin-top:-420px; margin-left: 100px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;} 
 /* Landing page hover effect */
-  #warrenHomePic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9; 
-  }
+#warrenHomePic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9; 
+}
 
 
 
-  /* About Page Css */
-  #aboutPic{max-width: 100%; height: 600px; margin-top: 70px; padding-left: 40px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;}
-  #aboutPic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9;} 
-  #warrenAbout{position: absolute; top: 150px;left: 380px; font-size: 70px;}
-  #warrenAboutText{position: absolute; top: 300px;left:40px}
+/* About Page Css */
+#aboutPic{max-width: 100%; height: 600px; margin-top: 70px; padding-left: 40px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;}
+#aboutPic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9;} 
+#warrenAbout{position: absolute; top: 150px;left: 380px; font-size: 70px;}
+#warrenAboutText{position: absolute; top: 300px;left:40px}
 
 #text3{position:absolute;top:120px}
 #text4{position:absolute;top:140px}
 #text5{position:absolute;top:230px}
 #text6{position:absolute;top:250px}
-  #goal{position: absolute; top: -40px;left: 10px; font-size: 30px;}
-  #mission{position: absolute; top: 80px;left: 10px; font-size: 30px;}
-  #vision{position: absolute; top: 190px;left: 10px; font-size: 30px;}
+#goal{position: absolute; top: -40px;left: 10px; font-size: 30px;}
+#mission{position: absolute; top: 80px;left: 10px; font-size: 30px;}
+#vision{position: absolute; top: 190px;left: 10px; font-size: 30px;}
 
 
 
 /* product css */
 #buttonProd {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+padding: 5px 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
 }
+
+#btnSort {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: -1360px;
+  background-color: #3498db; /* Blue color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+
+  /* Add box shadow for a subtle lift effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#btnSort:hover {
+  background-color: #2980b9; /* Darker blue color on hover */
+}
+ 
+  #product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    margin-top:200px;
+  }
+
+
+
+.searching {
+    display: flex;
+    align-items: center;
+}
+
+#input {
+  position:absolute;
+    padding: 8px;
+    margin-top:180px;
+    margin-left: 1100px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#search {
+
+    padding: 10px 15px;
+    background-color: #3498db; /* Blue color */
+    color: #fff; /* Text color */
+    border: none;
+    margin-left:1320px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:180px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+#search:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+
 
 /* admin css */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  margin-top: 130px; /* Add margin-top to move the table down */
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+margin-top: 260px; /* Add margin-top to move the table down */
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-  color: white;
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+color: white;
 }
 
 th {
-  background-color: #f2f2f2;
+background-color: transparent;
 }
 
 
-
-
-#adminAdd,#adminEdit {
+#adminAdd{
+  position:absolute;
   padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+background-color: #007bff;
+color: #fff;
+border: none;
+margin-top:-90px;
+margin-left:1326px;
+cursor: pointer;
+}
+
+#adminEdit {
+padding: 5px 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
 }
 
 
 #adminAdd,#adminEdit:hover {
-  background-color: #0056b3;
+background-color: #0056b3;
 }
 
 .delete {
-  background-color: #dc3545;
+background-color: #dc3545;
 }
 
 .delete:hover {
-  background-color: #bd2130;
+background-color: #bd2130;
+}
+
+#adminHeader{
+  position: absolute;
+  color:white;
+  font-size: 100px;
+  margin-top: -120px;
+  margin-left:610px;
+}
+
+#spinner{
+  margin-top:150px;
+  color:white;
+}
+
+
+.para{
+  color:white;
+  font-size: 50px;
 }
