@@ -8,13 +8,6 @@ let  jackets = JSON.parse(localStorage.getItem('jackets'));
 
 // Call display() when the page loads
 display();
-
-main.addEventListener('click', function () {
-    if (event.target.hasAttribute('data-add')) {
-        add(event.target.value);
-    }
-});
-
 // Sort function for organizing items alphabetically
 function sortItems() {
     //calling the array jackets along with the sort method. it then passes 2 parameters a and b and then assigns them to variables called PriceA and PriceB
@@ -53,7 +46,7 @@ function display(filteredItems) {
                 <p class="card-text">${item.description}</p>
                 <p class="card-text" style="font-size: 16px;">Price: ${item.price}</p>
                 <div class="d-flex justify-content-center"> <!-- This div ensures buttons are in the same row -->
-                    <button class="btn btn-primary add-cart-button">Add to Cart</button>
+                <button class="btn btn-primary" data-add value='${index}'>Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -96,3 +89,24 @@ function search() {
 btnSearch.addEventListener('click', () => {
     search();
 });
+
+
+
+
+function add(index){
+    //this is pushing the values that are located by JSON.parse localstorage etc then inside we put index
+    purchasedJackets.push(jackets[index])
+    localStorage.setItem('purchasedJackets',JSON.stringify(purchasedJackets))
+    
+    }
+    
+    main.addEventListener('click',function(){
+    
+        if(event.target.hasAttribute('data-add')){
+    
+      add(event.target.value)
+    
+    }})
+
+
+
