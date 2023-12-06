@@ -140,3 +140,73 @@ function warren(){
 warren()
 
 
+// ... (Your existing code)
+
+document.getElementById('adminAdd').addEventListener('click', function () {
+    // Display the modal using innerHTML, the modal code was retrieved from the boostrap website and just altered
+    document.getElementById('Modal').innerHTML = `
+        <div id="addItemModal" data-addItemModal class="modal fade" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addItemModalLabel">Add New Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addItemForm" data-addItemForm>
+                            <label for="itemId">ID:</label>
+                            <input type="number" id="itemId" data-itemId required>
+                            <label for="itemName">Name:</label>
+                            <input type="text" id="itemName" data-itemName required>
+                            <label for="itemDescription">Description:</label>
+                            <input type="text" id="itemDescription"  data-itemDescription required>
+                            <label for="itemPrice">Price:</label>
+                            <input type="number" id="itemPrice" data-Price required>
+                            <button type="submit">Add Item</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // This piece of code is responsible for showing the modal
+    let addItemModal = new bootstrap.Modal(document.querySelector('[data-addItemModal]'));
+    addItemModal.show();
+
+    //what this piece of code does is Add an event listener to the form inside the modal to handle new item addition
+    document.querySelector('[data-addItemForm]').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // declare values of the differnet items that the 
+        let newItemId = document.querySelector('[data-itemId]').value;
+        let newItemName = document.querySelector('[data-itemName]').value;
+        let newItemDescription = document.querySelector('[data-itemDescription]').value;
+        let newItemPrice = document.querySelector('[data-Price]').value;
+
+        // Create a new item object directly
+        let newItem = {
+            id: parseInt(newItemId),
+            name: newItemName,
+            description: newItemDescription,
+            price: parseInt(newItemPrice),
+            url: 'https://i.postimg.cc/3rZ0H0D8/profile-Image.png',
+            quantity:1,
+        };
+
+        // Add the new item to the jackets array
+        jackets.push(newItem);
+
+        // Save the updated jackets array to local storage
+        localStorage.setItem('jackets', JSON.stringify(jackets));
+
+        // Refresh the table to display the new item
+        warren();
+
+        // Hide the modal
+        addItemModal.hide();
+    });
+});
+
+
+// ... (Your existing code)
