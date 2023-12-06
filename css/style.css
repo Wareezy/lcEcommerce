@@ -286,6 +286,9 @@ background-color: #bd2130;
   margin-top:3169px;
   margin-left:1300px
 } */
+
+
+/* admin */
 #adminPurchase{
   position:absolute;
   padding: 5px 10px;
@@ -295,4 +298,66 @@ border: none;
 margin-top:-90px;
 margin-left:1326px;
 cursor: pointer;
+}
+
+#addItemModal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  max-width: 500px;
+}
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.btn-close {
+  color: #fff;
+}
+
+.btn-close:hover {
+  color: #fff;
+  opacity: 0.8;
 }
