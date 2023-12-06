@@ -12,6 +12,7 @@ function Constructor(id,name,description,price,url)
     this.description=description;
     this.price=price;
     this.url=url;
+    this.quantity=1
 }
 
 
@@ -91,7 +92,7 @@ function warren(){
 
 
     <button id="adminAdd">A NEW ITEM</button>`
-    let tableHead=
+    let headerValues=
     `
     <!-- This code is responsible for displaying the headers of the table -->
     <thead>
@@ -134,16 +135,8 @@ function warren(){
         `
     })
 
-    table.innerHTML=tableHead+addButton+products.join('')
+    table.innerHTML=headerValues+addButton+products.join('')
 }
 warren()
-
-// function Best()
-// {
-// localStorage.setItem('items',JSON.stringify(jackets))
-// jackets=JSON.parse(localStorage.getItem('items'))
-
-// }
-
 
 
