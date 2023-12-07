@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+    <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body class="bg-black p-0" id="landing">
     <header></header>
@@ -41,11 +42,97 @@
                         <a class="nav-link text-white" href="/html/contact.html">CONTACT</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav ml-auto" id="logoPos" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Wareezy">
+                            <img src="https://i.postimg.cc/Xvdp8q6Y/github-removebg.png" id="logoImg" >
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/warren-jaftha-b36338208">
+                            <img src="https://i.postimg.cc/158RBXp1/linkedin-removebg.png" id="logoImg">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <main></main>
+    <main>
+
+        <section class="contact" id="cont">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>We're delighted that you're here. Whether you have questions, suggestions, or just want to say hello, we're ready to listen. Your thoughts matter to us, and we're eager to assist.
+        
+                    Thanks for reaching out - we can't wait to connect with you!</p>
+                </div>
+                <div class="containerContact">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>5 Grysbok Avenue,</p>
+                                <p>Lotus River,</p>
+                                <p>7941</p>
+                            </div>
+                        </div>
+        
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>061-862-0283</p>
+                            
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>warrenjaftha16@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form 
+                        action="https://formspree.io/f/mdorqepn"
+                        method="POST"
+                        >
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="name" name="name" required="required">
+                                <span>First Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="name" name="name" required="required">
+                                <span>Surname</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="number" name="number" required="required">
+                                <span>Number</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="email" name="email" required="required">
+                                <span>Email</span>
+                            </div>
+        
+                            <div class="inputBox">
+                                <textarea required="required" name="message"></textarea>
+                                <span>Type your message...</span>
+                            </div>
+        
+                            <div class="inputBox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+        
+                    </div>
+                
+            </div>
+        </section>
+    </main>
     <footer class="footerContact">
         <p>@HoodCrafted- 2023</p>
     </footer>

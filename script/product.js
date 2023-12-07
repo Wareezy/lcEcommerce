@@ -30,7 +30,10 @@ function sortItems() {
 
 function display(filteredItems) {
     let productCardsContainer = document.querySelector('[data-productsCard]');
-
+    if ((jackets.length === 0)) {
+        showSpinner();
+        return;
+    }
 //if you call the function display without passing any argument, then what will happen 
 //is that it will display all the items
 //because the the itemsToDisplay with default to the items using the || operator which will display all items
@@ -66,6 +69,21 @@ btnSort.addEventListener('click', () => {
 
 
 
+function showSpinner() {
+    
+    let addSpinner = `
+    <div id="spinner">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        </div>
+    `;
+
+    //this piece of codewill display the spinner inside the table tag using innerHTML
+    main.innerHTML = addSpinner;
+}
 
 
 
