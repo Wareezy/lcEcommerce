@@ -12,7 +12,9 @@ function updateCartItems() {
     cartItems.forEach(item => {
         let existingItem = updatedCart.find(updatedItem => updatedItem.name === item.name);
         if (existingItem) {
-            existingItem.quantity += 1; // Increase quantity for duplicates
+
+            // Increase quantity for duplicates
+            existingItem.quantity += 1; 
         } else {
             updatedCart.push({ ...item, quantity: 1 }); // Add new items with quantity 1
         }
