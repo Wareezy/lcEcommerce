@@ -249,14 +249,14 @@ function addNewItemEventListener() {
               throw new Error("Please fill in all required fields.");
             }
 
-            // Check if the price is a valid number
+            // this piece of code will basically be Checking if the price is a valid number if it isnt then it will throw an error statement
             if (isNaN(newItemPrice) || newItemPrice <= 0) {
               throw new Error(
                 "Please enter a valid positive number for the price."
               );
             }
 
-            // Create a new item object with the provided values
+            // I then created a new object that will be accepting the new updated values
             let newItem = {
               id: parseInt(newItemId),
               name: newItemName,
@@ -266,21 +266,24 @@ function addNewItemEventListener() {
               quantity: 1,
             };
 
-            // Add the new item to the 'jackets' array
+            // Now i will be adding the new items into the jacket array
             jackets.push(newItem);
 
-            // Store the updated 'jackets' array in local storage
+            // now we save the array to the local storage by setting it
             localStorage.setItem("jackets", JSON.stringify(jackets));
 
-            // Call the function 'warren' (assuming it's a valid function)
+            //Now once again we call the warren function
             warren();
 
             // Hide the 'Add Item' modal
             addItemModal.hide();
 
-            // Call the function 'addNewItemEventListener'
+            // now we Call the function 'addNewItemEventListener'
             addNewItemEventListener();
           } catch (error) {
+
+
+
             // Display an alert with the error message to the user
             alert(error.message);
           }
@@ -291,6 +294,8 @@ function addNewItemEventListener() {
 // Call the function to set up the event listener
 addNewItemEventListener();
 
+
+// this piece of code will be responsible for executing the modal which will be requesting the user to edit the values in the jackets array
 function displayModalWhichEdits(item, index) {
   document.getElementById("Modal").innerHTML = `
         <div id="editItemModal" data-editModalItem class="modal fade" tabindex="-1" aria-labelledby="editItemModalLabel" aria-hidden="true">
@@ -319,51 +324,64 @@ function displayModalWhichEdits(item, index) {
         </div>
     `;
 
-  // Create a new Bootstrap modal instance for the 'Edit Item' modal
+  // This will be responsible for creating a new Bootstrap modal instance for the 'Edit Item' modal
   let editItem = new bootstrap.Modal(
     document.querySelector("[data-editModalItem]")
   );
 
-  // Show the 'Edit Item' modal when triggered
+  // When the button is clicked the modal will be shown
   editItem.show();
 
-  // Add an event listener to the form inside the 'Edit Item' modal
+
+  //but now we have a problem we need to add an event listener into the form which will be contained inside of the 'Edit item' modal
   document
     .querySelector("[data-editedFormItem]")
     .addEventListener("submit", function (event) {
       event.preventDefault();
 
       try {
-        // Retrieve the index of the item being edited from the form
+
+        //Our next task is to retrieve the index of the item which will be edited in the form
         let editedIndexOfItem = parseInt(
           document.querySelector("[data-editIndexOfItem]").value
         );
 
-        // Update the properties of the item at the specified index
+
+        //this piece of code will be responsible for undating the properties of the item that will be found at a specified index
         jackets[editedIndexOfItem].id = parseInt(
           document.querySelector("[data-editIdOfItem]").value
         );
+
+
+        // Thus line updates the name property of the item at the specified index in the jackets array
+        //then it retrieves the new element from the attribute 'data-editIdOfItem' then what it will do is convert it to an integer
         jackets[editedIndexOfItem].name = document.querySelector(
           "[data-editNameOfItem]"
         ).value;
+
+        //updates the description property at the specified index in the jackets array.
         jackets[editedIndexOfItem].description = document.querySelector(
           "[data-editDescriptionOfItem]"
         ).value;
+
+        //this line updates the price property of the item at the specified index in the 'jackets' array
         jackets[editedIndexOfItem].price = parseInt(
           document.querySelector("[data-editPriceOfItem]").value
         );
 
-        // Store the updated 'jackets' array in local storage
+        // Now when the array has been updated then we need to set it in the local storage using the key called 'jackets'
         localStorage.setItem("jackets", JSON.stringify(jackets));
 
-        // Hide the 'Edit Item' modal
+        // This will just hide the modal
         editItem.hide();
 
-        // Call functions to update the display and event listeners
+        // we will now be recalling the warren() function
         warren();
+
+        //and the addNewItemEventListener() function 
         addNewItemEventListener();
       } catch (error) {
-        // Display an alert with the error message if an error occurs
+   //We used a try and catch statement that when the an error is encountered then the console log will display an error
         alert(error.message);
       }
     });
@@ -375,13 +393,20 @@ function sortItems() {
     let priceA = a.price;
     let priceB = b.price;
 
+    
     if (priceA < priceB) {
+
+        //if it gives a negative value that means that means that a should come before b
       return -1;
     }
     if (priceA > priceB) {
+
+        //if it gives a positive value to idicate a should come after b
       return 1;
     }
 
+
+    //if this price is equal, return 0 then that means that the order shouldnt change
     return 0;
   });
 }

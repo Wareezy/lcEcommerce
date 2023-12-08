@@ -98,7 +98,7 @@ p {
   color: #fff;
   text-align: center;
   position: relative;
-  margin-top: 250px;
+  margin-top: 310px;
   bottom: 0px;
   width: 100%;
   padding: 20px 0;
@@ -117,7 +117,6 @@ p {
 #landingText {
   padding-bottom: 30px;
   padding-top: 250px;
-  /* Center-align text on smaller screens */
   font-size: 20px;
   margin-right: 100px;
 }
@@ -360,12 +359,12 @@ th {
   margin-left: 1386px;
   cursor: pointer;
 }
-#checkoutHeader{
+#checkoutHeader {
   color: white;
-position: absolute;
-font-size: 70px;
-margin-left: 630px;
-  margin-top:-130px;
+  position: absolute;
+  font-size: 70px;
+  margin-left: 630px;
+  margin-top: -130px;
 }
 
 #addItemModal {
@@ -585,7 +584,7 @@ button:hover {
   padding-left: 700px;
 }
 
-/* any responsiveness code */
+/* any responsiveness code will be put here */
 
 /* Landing responsiveness */
 @media (max-width: 768px) {
@@ -601,11 +600,11 @@ button:hover {
     top: 200px;
     margin-right: 0px;
     padding: 20px;
-    font-size: 18px; /* Adjusted font size for smaller screens */
+    font-size: 18px;
   }
 
   #warrenHomePic {
-    margin-top: 200px; /* Adjusted margin top for smaller screens */
+    margin-top: 200px;
     margin-left: auto;
   }
 }
@@ -649,7 +648,7 @@ button:hover {
 }
 
 /* Product responsiveness */
-/* Media query for screens with a maximum width of 768px */
+
 @media screen and (max-width: 768px) {
   #search {
     position: sticky;
@@ -658,7 +657,7 @@ button:hover {
     margin-left: 2px;
   }
   #input {
-    position:sticky;
+    position: sticky;
     margin: auto;
     margin-top: 140px;
     margin-left: 190px;
@@ -677,27 +676,27 @@ button:hover {
 }
 
 /*Checkout responsiveness */
-/* Media query for screens with a maximum width of 768px */
 
 @media screen and (max-width: 768px) {
-
-#checkoutPurchase{
-  position:absolute;
+  #checkoutPurchase {
+    position: absolute;
     margin: auto;
-    margin-top:-40px;
+    margin-top: -40px;
     margin-left: 410px;
+  }
+
+  #checkoutHeader {
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    margin-left: 140px;
+    margin-top: -130px;
+  }
 }
 
-#checkoutHeader{
-  color: white;
-position: absolute;
-font-size: 60px;
-margin-left: 140px;
-  margin-top:-130px;
-}}
-
 @media only screen and (max-width: 600px) {
-  th, td {
+  th,
+  td {
     font-size: 12px;
   }
 
@@ -705,49 +704,47 @@ margin-left: 140px;
     display: block;
     width: 48px;
     text-align: center;
-    height:40px;
+    height: 40px;
     box-sizing: border-box;
   }
 
   #imgCheck {
     width: 100px;
-    height:100px;
-  } 
+    height: 100px;
+  }
 }
 
-
-
 /* admin responsiveness */
-  @media screen and (max-width: 768px) {
-    #adminAdd {
-        position: absolute;
-        margin: auto;
-        margin-top: -80px;
-        margin-left: 400px;
-        font-size:13px;
-      
-    }
-
-    #adminHeader {
-      font-size: 60px;
-      margin-left: 170px; /* Adjust the margin as needed for smaller screens */
-      margin-top:-140px;
-    }
-
-    th, td {
-      font-size: 12px;
-    }
-  
-    .delete {
-      display: block;
-      width: 48px;
-      text-align: center;
-      height:40px;
-      box-sizing: border-box;
-    }
-  
-    #imgAdmin {
-      width: 100px;
-      height:100px;
-    } 
+@media screen and (max-width: 768px) {
+  #adminAdd {
+    position: absolute;
+    margin: auto;
+    margin-top: -80px;
+    margin-left: 400px;
+    font-size: 13px;
   }
+
+  #adminHeader {
+    font-size: 60px;
+    margin-left: 170px;
+    margin-top: -140px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  .delete {
+    display: block;
+    width: 48px;
+    text-align: center;
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  #imgAdmin {
+    width: 100px;
+    height: 100px;
+  }
+}
