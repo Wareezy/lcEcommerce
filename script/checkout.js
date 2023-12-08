@@ -71,6 +71,9 @@ function displayCheckout() {
 
   let totalPrice = 0;
 
+
+
+  //this piece of code will map through "loop" through the cartItems array use the item and index and parameters
   let displayCheckout = cartItems.map((item, index) => {
     let totalPriceItem = item.price * item.quantity;
     totalPrice += totalPriceItem;
