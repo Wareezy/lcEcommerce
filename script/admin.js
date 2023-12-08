@@ -354,12 +354,13 @@ function displayModalWhichEdits(item, index) {
 
 
         // Thus line updates the name property of the item at the specified index in the jackets array
-        //then it retrieves the new element from the attribute 'data-editIdOfItem' then what it will do is convert it to an integer
+        //then it retrieves the new element from the attribute 'data-editIdOfItem'
         jackets[editedIndexOfItem].name = document.querySelector(
           "[data-editNameOfItem]"
         ).value;
 
         //updates the description property at the specified index in the jackets array.
+        //then what we will do is retrieve the new value from the 'data-editDescriptionOfItem' attribute
         jackets[editedIndexOfItem].description = document.querySelector(
           "[data-editDescriptionOfItem]"
         ).value;
