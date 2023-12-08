@@ -154,32 +154,32 @@
             </div>
           </div>
           <div class="contactForm">
-            <form action="https://formspree.io/f/mdorqepn" method="POST">
+            <form  id="formOfContact" action="https://formspree.io/f/mdorqepn" method="POST">
               <h2>Send Message</h2>
               <div class="inputBox">
-                <input type="name" name="name" required="required" />
+                <input type="name" name="name" required="required" data-sendingFirstName/>
                 <span>First Name</span>
               </div>
               <div class="inputBox">
-                <input type="name" name="name" required="required" />
+                <input type="name" name="name" required="required" data-sendingLastName />
                 <span>Surname</span>
               </div>
               <div class="inputBox">
-                <input type="number" name="number" required="required" />
+                <input type="number" name="number" required="required"  data-sendingNumber/>
                 <span>Number</span>
               </div>
               <div class="inputBox">
-                <input type="email" name="email" required="required" />
+                <input type="email" name="email" required="required" data-sendingEmail/>
                 <span>Email</span>
               </div>
 
               <div class="inputBox">
-                <textarea required="required" name="message"></textarea>
+                <textarea required="required" name="message" data-sendingMessage></textarea>
                 <span>Type your message...</span>
               </div>
 
               <div class="inputBox">
-                <input type="submit" name="" value="Send" />
+                <input type="submit" sendingButton name="" value="Send" />
               </div>
             </form>
           </div>

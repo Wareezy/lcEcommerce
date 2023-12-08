@@ -1,3 +1,5 @@
+
+//declaring the btnSort variable
 let btnSort = document.querySelector("[data-sort]");
 let btnSearch = document.querySelector("[data-search]");
 let main = document.querySelector("main");
@@ -19,9 +21,13 @@ function sortItems() {
       let priceB = b.price;
 
       if (priceA < priceB) {
+                //if it gives a negative value that means that means that a should come before b
+
         return -1;
       }
       if (priceA > priceB) {
+                //if it gives a positive value to idicate a should come after b
+
         return 1;
       }
 
@@ -43,6 +49,8 @@ function display(filteredItems) {
   let productCardsContainer = document.querySelector(
     "[data-productsDisplayCard]"
   );
+
+  //this is a if statement that if the jackets array length is equal to 0 then it will display the spinner function
   if (jackets.length === 0) {
     showSpinner();
     return;
@@ -50,7 +58,6 @@ function display(filteredItems) {
   //if you call the function display without passing any argument, then what will happen
   //is that it will display all the items
   //because the the itemsToDisplay with default to the items using the || operator which will display all items
-
   productCardsContainer.innerHTML = (filteredItems || jackets)
     .map(function (item, index) {
       return `
@@ -117,11 +124,15 @@ btnSearch.addEventListener("click", () => {
 });
 
 function add(index) {
+
+  //this function is basically responsible for pushi
   //this is pushing the values that are located by JSON.parse localstorage etc then inside we put index
   purchasedJackets.push(jackets[index]);
   localStorage.setItem("purchasedJackets", JSON.stringify(purchasedJackets));
 }
 
+//this is calling the the main tag that was display at the beginning of the code 
+//if the button is clicked that has the attribute of data-add then it will execute the add function
 main.addEventListener("click", function () {
   if (event.target.hasAttribute("data-add")) {
     add(event.target.value);

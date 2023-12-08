@@ -1,8 +1,14 @@
+//This will get the array called purchasedJackets
+
 let cartItems = JSON.parse(localStorage.getItem("purchasedJackets"));
+
+//this variable is there for the table in which the table will be displayed in
 let table = document.querySelector("table");
 
 //declaring a variable for the delete button
 let deleteButton = document.querySelector(".delete");
+
+//declaring a variable for the purchase button
 let btnPurchase = document.querySelector("[data-purchase]");
 
 function showSpinner() {
