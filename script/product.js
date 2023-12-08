@@ -1,45 +1,59 @@
-let btnSort = document.querySelector('[data-sort]');
-let btnSearch = document.querySelector('[data-search]');
-let main = document.querySelector('main');
+let btnSort = document.querySelector("[data-sort]");
+let btnSearch = document.querySelector("[data-search]");
+let main = document.querySelector("main");
 let purchasedJackets = [];
-let container=document.querySelector('[data-productsCard]')
+let container = document.querySelector("[data-productsDisplayCard]");
 // Retrieve items from localStorage or initialize an empty array
-let  jackets = JSON.parse(localStorage.getItem('jackets'));
+let jackets = JSON.parse(localStorage.getItem("jackets"));
 
 // Call display() when the page loads
 display();
 // Sort function for organizing items alphabetically
-function sortItems() {
-    //calling the array jackets along with the sort method. it then passes 2 parameters a and b and then assigns them to variables called PriceA and PriceB
-    jackets.sort((a, b) => {
-        let priceA = a.price
-        let priceB = b.price
+let isSorted = false; // Variable to track the sorting state
 
-        if (priceA < priceB) 
-        {
-            return -1;
-        }
-        if (priceA > priceB) 
-        {
-            return 1;
-        }
-        
-        return 0;
+function sortItems() {
+  // Toggle the sorting order
+  if (isSorted) {
+    jackets.sort((a, b) => {
+      let priceA = a.price;
+      let priceB = b.price;
+
+      if (priceA < priceB) {
+        return -1;
+      }
+      if (priceA > priceB) {
+        return 1;
+      }
+
+      return 0;
     });
+  } else {
+    // Reverse the order to go back to the previous position
+    jackets.reverse();
+  }
+
+  isSorted = !isSorted; // Toggle the sorting state
 }
 
+btnSort.addEventListener("click", () => {
+  sortItems();
+  display();
+});
 function display(filteredItems) {
-    let productCardsContainer = document.querySelector('[data-productsCard]');
-    if ((jackets.length === 0)) {
-        showSpinner();
-        return;
-    }
-//if you call the function display without passing any argument, then what will happen 
-//is that it will display all the items
-//because the the itemsToDisplay with default to the items using the || operator which will display all items
-        
-    productCardsContainer.innerHTML = (filteredItems || jackets).map(function (item, index) {
-        return `
+  let productCardsContainer = document.querySelector(
+    "[data-productsDisplayCard]"
+  );
+  if (jackets.length === 0) {
+    showSpinner();
+    return;
+  }
+  //if you call the function display without passing any argument, then what will happen
+  //is that it will display all the items
+  //because the the itemsToDisplay with default to the items using the || operator which will display all items
+
+  productCardsContainer.innerHTML = (filteredItems || jackets)
+    .map(function (item, index) {
+      return `
         <div class="col-md-4 my-5 d-flex justify-content-center">
         <div class="card h-100" style="width: 18rem;">
 
@@ -55,23 +69,17 @@ function display(filteredItems) {
         </div>
     </div>
         `;
-    }).join('');
+    })
+    .join("");
 }
 
 // Call the display function
 display();
 
 // Event listener for the Sort button
-btnSort.addEventListener('click', () => {
-    sortItems();
-    display();
-});
-
-
 
 function showSpinner() {
-    
-    let addSpinner = `
+  let addSpinner = `
     <div id="spinner">
         <div class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
@@ -81,50 +89,41 @@ function showSpinner() {
         </div>
     `;
 
-    //this piece of codewill display the spinner inside the table tag using innerHTML
-    main.innerHTML = addSpinner;
+  //this piece of codewill display the spinner inside the table tag using innerHTML
+  main.innerHTML = addSpinner;
 }
-
-
 
 // This function will be used to search for values that the user has added
 function search() {
-    let userInput = document.querySelector('[data-input]').value.toUpperCase();
+  let userInput = document.querySelector("[data-input]").value.toUpperCase();
 
-    // Filter items based on user input then convert the user input to upperCase
-    let filteredItems = jackets.filter(item => item.name.toUpperCase().includes(userInput));
+  // Filter items based on user input then convert the user input to upperCase
+  let filteredItems = jackets.filter((item) =>
+    item.name.toUpperCase().includes(userInput)
+  );
 
-    // If the filtered element is greater than 0, items are found
-    if (filteredItems.length > 0) {
-        // If items are found, display only those items
-        display(filteredItems);
-    } else if (filteredItems.length==0) {
-       container.innerHTML='<p class="para">Item(s) was not found</p>' 
-    }
+  // If the filtered element is greater than 0, items are found
+  if (filteredItems.length > 0) {
+    // If items are found, display only those items
+    display(filteredItems);
+  } else if (filteredItems.length == 0) {
+    container.innerHTML = '<p class="para">Item(s) was not found</p>';
+  }
 }
 
 // Event listener for the Search button
-btnSearch.addEventListener('click', () => {
-    search();
+btnSearch.addEventListener("click", () => {
+  search();
 });
 
+function add(index) {
+  //this is pushing the values that are located by JSON.parse localstorage etc then inside we put index
+  purchasedJackets.push(jackets[index]);
+  localStorage.setItem("purchasedJackets", JSON.stringify(purchasedJackets));
+}
 
-
-
-function add(index){
-    //this is pushing the values that are located by JSON.parse localstorage etc then inside we put index
-    purchasedJackets.push(jackets[index])
-    localStorage.setItem('purchasedJackets',JSON.stringify(purchasedJackets))
-    
-    }
-    
-    main.addEventListener('click',function(){
-    
-        if(event.target.hasAttribute('data-add')){
-    
-      add(event.target.value)
-    
-    }})
-
-
-
+main.addEventListener("click", function () {
+  if (event.target.hasAttribute("data-add")) {
+    add(event.target.value);
+  }
+});
