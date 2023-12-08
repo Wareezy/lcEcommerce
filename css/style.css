@@ -1,64 +1,71 @@
-
-body{
+body {
   overflow-x: hidden;
- 
 }
-/* 
-font family */
-h1,h2,h3,p{
+
+h1,
+h2,
+h3,
+p {
   font-family: Arapey;
 }
 
 /* nav bar css */
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #fff; 
-  background-color: #333; 
-  border-radius: 5px; 
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
   transition: 0.5s;
   z-index: 1;
 }
-.logo{
+.logo {
   transition: transform 0.3s, filter 0.3s;
 }
 .logo:hover {
-  transform: scale(1.1); 
-  filter: grayscale(100%); 
+  transform: scale(1.1);
+  filter: grayscale(100%);
 }
 
 .sticky {
-  position: fixed ;
+  position: fixed;
   top: 0;
   width: 100%;
 }
-#navBarBack{background-color: grey; margin-top: -40px; padding-bottom: 2px;padding-top: 40px;}
-#logo{max-height: 100px; margin-left: -100px;}
-
+#navBarBack {
+  background-color: grey;
+  margin-top: -40px;
+  padding-bottom: 2px;
+  padding-top: 40px;
+}
+#logo {
+  max-height: 100px;
+  margin-left: -10px;
+}
 
 /* FOOTER CSS */
 .footerLand {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
-  margin-top:0px;
-  bottom:0px;
+  margin-top: 0px;
+  bottom: 0px;
   width: 100%;
   padding: 20px 0;
 }
 
 .footerAbout {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
-  margin-top:0px;
-  bottom:0px;
+  margin-top: 0px;
+  bottom: 0px;
   width: 100%;
   padding: 20px 0;
 }
 .footerAdmin {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
   width: 100%;
@@ -68,7 +75,7 @@ h1,h2,h3,p{
 
 .footerCheckout {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
   width: 100%;
@@ -77,203 +84,258 @@ h1,h2,h3,p{
 }
 .footerContact {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
-  margin-top:900px;
-  bottom:0px;
+  margin-top: 900px;
+  bottom: 0px;
   width: 100%;
   padding: 20px 0;
 }
 
 .footerProduct {
   background-color: grey;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   position: relative;
-  margin-top:200px;
-  bottom:0px;
+  margin-top: 250px;
+  bottom: 0px;
   width: 100%;
   padding: 20px 0;
 }
 /* FOOTER CSS */
 
-
-
-
 /* Landing Page css */
-#businessName{position: absolute; top: 170px; left: 330px;font-size: 70px;}
-#landingText{padding-bottom: 30px; padding-top: 250px; margin-right:400px;font-size: 23px;}
-#warrenHomePic{max-width: 100%; height: 600px; margin-top:-420px; margin-left: 100px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;} 
-/* Landing page hover effect */
-#warrenHomePic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9; 
+#businessName {
+  position: absolute;
+  top: 170px;
+  left: 700px;
+  transform: translateX(-50%);
+  font-size: 70px;
 }
 
+#landingText {
+  padding-bottom: 30px;
+  padding-top: 250px;
+  /* Center-align text on smaller screens */
+  font-size: 20px;
+  margin-right: 100px;
+}
 
+#warrenHomePic {
+  max-width: 100%;
+  height: 600px;
+  margin-top: -350px;
+  margin-left: 190px;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+/* Landing page hover effect */
+#warrenHomePic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
 
 /* About Page Css */
-#aboutPic{max-width: 100%; height: 600px; margin-top: 70px; padding-left: 40px;transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;}
-#aboutPic:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); opacity: 0.9;} 
-#warrenAbout{position: absolute; top: 150px;left: 380px; font-size: 70px;}
-#warrenAboutText{position: absolute; top: 300px;left:40px}
+#aboutPic {
+  max-width: 100%;
+  height: 600px;
+  margin-top: 70px;
+  padding-left: 40px;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+#aboutPic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+#warrenAbout {
+  position: absolute;
+  top: 150px;
+  left: 380px;
+  font-size: 70px;
+}
 
-#text3{position:absolute;top:120px}
-#text4{position:absolute;top:140px}
-#text5{position:absolute;top:230px}
-#text6{position:absolute;top:250px}
-#goal{position: absolute; top: -40px;left: 10px; font-size: 30px;}
-#mission{position: absolute; top: 80px;left: 10px; font-size: 30px;}
-#vision{position: absolute; top: 190px;left: 10px; font-size: 30px;}
+#warrenAboutText {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+}
 
-
+#text3 {
+  position: absolute;
+  top: 120px;
+}
+#text4 {
+  position: absolute;
+  top: 140px;
+}
+#text5 {
+  position: absolute;
+  top: 230px;
+}
+#text6 {
+  position: absolute;
+  top: 250px;
+}
+#goal {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  font-size: 30px;
+}
+#mission {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  font-size: 30px;
+}
+#vision {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+  font-size: 30px;
+}
 
 /* product css */
 #buttonProd {
-padding: 5px 10px;
-background-color: #007bff;
-color: #fff;
-border: none;
-cursor: pointer;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 #btnSort {
   position: absolute;
   margin-top: 170px;
   margin-left: -1360px;
-  background-color: #3498db; /* Blue color */
-  color: #fff; /* Text color */
+  background-color: #3498db;
+  color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease; /* Smooth transition effect */
+  transition: background-color 0.3s ease;
 
-  /* Add box shadow for a subtle lift effect */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #btnSort:hover {
   background-color: #2980b9;
 }
- 
-  #product-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-
-    margin-top:200px;
-  }
-
-
 
 .searching {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #input {
-  position:absolute;
-    padding: 8px;
-    margin-top:180px;
-    margin-left: 1100px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+  position: absolute;
+  padding: 8px;
+  margin-top: 180px;
+  margin-left: 1100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 #search {
-
-    padding: 10px 15px;
-    background-color: #3498db; /* Blue color */
-    color: #fff; /* Text color */
-    border: none;
-    margin-left:1320px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top:180px;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  margin-left: 1320px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 180px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 #search:hover {
-    background-color: #2980b9; /* Darker blue color on hover */
+  background-color: #2980b9;
 }
 
+#product-Displaycards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 30px;
+}
 
 /* admin css */
 table {
-width: 100%;
-border-collapse: collapse;
-margin-bottom: 20px;
-margin-top: 260px; /* Add margin-top to move the table down */
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 260px;
 }
 
-th, td {
-border: 1px solid #ddd;
-padding: 8px;
-text-align: center;
-color: white;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: white;
 }
 
 th {
-background-color: transparent;
+  background-color: transparent;
 }
 
-
-#adminAdd{
-  position:absolute;
+#adminAdd {
+  position: absolute;
   padding: 5px 10px;
-background-color: #007bff;
-color: #fff;
-border: none;
-margin-top:-90px;
-margin-left:1326px;
-cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-top: -90px;
+  margin-left: 1326px;
+  cursor: pointer;
 }
 
 #adminEdit {
-padding: 5px 10px;
-background-color: #007bff;
-color: #fff;
-border: none;
-cursor: pointer;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-
-#adminAdd,#adminEdit:hover {
-background-color: #0056b3;
+#adminAdd,
+#adminEdit:hover {
+  background-color: #0056b3;
 }
 
 .delete {
-background-color: #dc3545;
+  background-color: #dc3545;
 }
 
 .delete:hover {
-background-color: #bd2130;
+  background-color: #bd2130;
 }
 
-#adminHeader{
+#adminHeader {
   position: absolute;
-  color:white;
+  color: white;
   font-size: 100px;
   margin-top: -120px;
-  margin-left:610px;
+  margin-left: 610px;
 }
 
-#spinner{
-  margin-top:150px;
-  color:white;
+#spinner {
+  margin-top: 150px;
+  color: white;
 }
 
-
-.para{
-  color:white;
+.para {
+  color: white;
   font-size: 50px;
 }
-
-
 
 /* checkout css */
 /* #total{
@@ -287,17 +349,23 @@ background-color: #bd2130;
   margin-left:1300px
 } */
 
-
-/* admin */
-#adminPurchase{
-  position:absolute;
+/* checkout css */
+#checkoutPurchase {
+  position: absolute;
   padding: 5px 10px;
-background-color: #007bff;
-color: #fff;
-border: none;
-margin-top:-90px;
-margin-left:1326px;
-cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-top: -40px;
+  margin-left: 1386px;
+  cursor: pointer;
+}
+#checkoutHeader{
+  color: white;
+position: absolute;
+font-size: 70px;
+margin-left: 630px;
+  margin-top:-130px;
 }
 
 #addItemModal {
@@ -362,164 +430,323 @@ button:hover {
   opacity: 0.8;
 }
 
-
 #btnSort2 {
   position: absolute;
   margin-top: -90px;
   margin-left: 10px;
-  background-color: #3498db; /* Blue color */
-  color: #fff; /* Text color */
+  background-color: #3498db;
+  color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease; /* Smooth transition effect */
+  transition: background-color 0.3s ease;
 
-  /* Add box shadow for a subtle lift effect */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* contact page */
-.contact{
-  position:relative;
+.contact {
+  position: relative;
   min-height: 100vh;
-  padding:50px 100px;
-  display:flex;
+  padding: 50px 100px;
+  display: flex;
   padding-top: 220px;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  background-size:cover;
+  background-size: cover;
 }
 
-.contact .content
-{
-  max-width:800px;
+.contact .content {
+  max-width: 800px;
   text-align: center;
 }
 
-.contact .content h2{
-  font-size:36px;
-  font-weight:500;
-  color:#fff;
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
 }
-.contact .content p{
-font-weight:500;
-color:#fff;
+.contact .content p {
+  font-weight: 500;
+  color: #fff;
 }
-.containerContact{
-  width:100%;
+.containerContact {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.containerContact .containerInfo{
-  width:50%;
-  display:flex;
+.containerContact .containerInfo {
+  width: 50%;
+  display: flex;
   flex-direction: column;
 }
 
-.containerContact .contactInfo .box{
-  position:relative;
-  padding:20px 0;
-  display:flex;
+.containerContact .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
 }
 
-.containerContact .contactInfo .box .icon{
-  min-width:60px;
-  height:60px;
-  background:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-radius:50%;
-  font-size:22px;
+.containerContact .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
 }
 
-.containerContact .contactInfo .box .text{
-  display:flex;
-  margin-left:20px;
-  font-size:16px;
-  color:#fff;
-  flex-direction:column;
-  font-weight:300;
+.containerContact .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
 }
 
-.containerContact .contactInfo .box .text h3{
-  font-weight:500;
-  color:#00bcd4;
-
+.containerContact .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #00bcd4;
 }
 
-.contactForm{
-  width:40%;
-  padding:40px;
+.contactForm {
+  width: 40%;
+  padding: 40px;
   margin-left: 60px;
   background: #fff;
 }
 
-.contactForm h2{
+.contactForm h2 {
   font-size: 30px;
-  color:#333;
+  color: #333;
   font-weight: 500;
 }
 
-.contactForm .inputBox{
-  position:relative;
-  width:100%;
-  margin-top:10px;
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .contactForm .inputBox input,
-.contactForm .inputBox textarea
-{
-width:100%;
-padding:5px 0;
-font-size:16px;
-margin:10px 0;
-border:none;
-border-bottom:2px solid #333;
-outline: none;
-resize:none;
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
 }
-.contactForm .inputBox span{
+.contactForm .inputBox span {
   position: absolute;
-  left:0;
-  padding:5px 0;
-  font-size:16px;
-  margin:10px 0;
-  pointer-events:none;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
   transition: 0.5s;
-  color:#666;
+  color: #666;
 }
 
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span
-{
-  color:#e91e63;
-  font-size:12px;
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
   transform: translateY(-20px);
-
 }
 
-.contactForm .inputBox input[type=submit]{
-
-  width:100px;
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
   background: #00bcd4;
-  color:#fff;
-  border:none;
-  cursor:pointer;
-  padding:10px;
-  font-size:18px;
-} 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#logoImg {
+  max-height: 50px;
+}
+#logoPos {
+  padding-left: 700px;
+}
+
+/* any responsiveness code */
+
+/* Landing responsiveness */
+@media (max-width: 768px) {
+  #businessName {
+    top: -54px;
+    left: 236px;
+    font-size: 30px;
+  }
+
+  #landingText {
+    text-align: left;
+    position: relative;
+    top: 200px;
+    margin-right: 0px;
+    padding: 20px;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  #warrenHomePic {
+    margin-top: 200px; /* Adjusted margin top for smaller screens */
+    margin-left: auto;
+  }
+}
+
+/* About responsiveness */
+@media (max-width: 768px) {
+  #warrenAbout,
+  #warrenAboutText {
+    position: static;
+    margin-top: -35px;
+    font-size: 2, 5vw;
+    text-align: center;
+  }
+
+  #aboutPic {
+    margin-left: 70px;
+  }
+  #warrenAbout {
+    position: static;
+    margin-top: 130px;
+    font-size: 2, 1vw;
+    text-align: center;
+  }
+  #text3,
+  #text4,
+  #text5,
+  #text6 {
+    position: static;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  #goal,
+  #mission,
+  #vision {
+    position: static;
+    margin-top: 5%;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+/* Product responsiveness */
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  #search {
+    position: sticky;
+    margin: auto;
+    margin-top: 0;
+    margin-left: 2px;
+  }
+  #input {
+    position:sticky;
+    margin: auto;
+    margin-top: 140px;
+    margin-left: 190px;
+  }
+
+  #btnSort {
+    position: sticky;
+    margin: auto;
+    margin-top: 120px;
+    margin-left: -450px;
+  }
+
+  .searching {
+    justify-content: center;
+  }
+}
+
+/*Checkout responsiveness */
+/* Media query for screens with a maximum width of 768px */
+
+@media screen and (max-width: 768px) {
+
+#checkoutPurchase{
+  position:absolute;
+    margin: auto;
+    margin-top:-40px;
+    margin-left: 410px;
+}
+
+#checkoutHeader{
+  color: white;
+position: absolute;
+font-size: 60px;
+margin-left: 140px;
+  margin-top:-130px;
+}}
+
+@media only screen and (max-width: 600px) {
+  th, td {
+    font-size: 12px;
+  }
+
+  .delete {
+    display: block;
+    width: 48px;
+    text-align: center;
+    height:40px;
+    box-sizing: border-box;
+  }
+
+  #imgCheck {
+    width: 100px;
+    height:100px;
+  } 
+}
 
 
-#logoImg{max-height: 50px;}
-#logoPos{padding-left: 700px;}
+
+/* admin responsiveness */
+  @media screen and (max-width: 768px) {
+    #adminAdd {
+        position: absolute;
+        margin: auto;
+        margin-top: -90px;
+        margin-left: 380px;
+      
+    }
+
+    #adminHeader {
+      font-size: 60px;
+      margin-left: 170px; /* Adjust the margin as needed for smaller screens */
+      margin-top:-140px;
+    }
+
+    th, td {
+      font-size: 12px;
+    }
+  
+    .delete {
+      display: block;
+      width: 48px;
+      text-align: center;
+      height:40px;
+      box-sizing: border-box;
+    }
+  
+    #imgAdmin {
+      width: 100px;
+      height:100px;
+    } 
+  }
