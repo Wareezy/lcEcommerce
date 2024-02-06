@@ -23,42 +23,42 @@ let item1 = new Constructor(
   "NarutoVsSasuke",
   "Limited Edition Naruto vs Sasuke Jacket",
   200,
-  "https://i.postimg.cc/tRKBTgzC/Jacket-white-B.png"
+  "https://i.ibb.co/K5V95S2/Jacket-white-B.png" 
 );
 let item2 = new Constructor(
   2,
   "Luffy",
   "Black and white one piece jacket",
   700,
-  "https://i.postimg.cc/ydP7NGM7/Jacket2-white-B.png"
+  "https://i.ibb.co/c6QhDST/Jacket2-white-B.png" 
 );
 let item3 = new Constructor(
   3,
   "Zoro",
   "One piece jacket with zoro on the front",
   100,
-  "https://i.postimg.cc/V6BXkYs5/Jacket3-white-B.png"
+  "https://i.ibb.co/k1zsnwm/Jacket3-white-B.png" 
 );
 let item4 = new Constructor(
   4,
   "Pirates",
   "One piece grafitti style jacket with the whole team",
   700,
-  "https://i.postimg.cc/Tw7Y9SCC/Jacket4-white-B.png"
+  "https://i.ibb.co/J5M7p1J/Jacket4-white-B.png" 
 );
 let item5 = new Constructor(
   5,
   "ZoroBlackAndWhite",
   "Black and white jacket featuring one piece character zoro",
   500,
-  "https://i.postimg.cc/85hxkrrW/Jacket5-white-B.png"
+  "https://i.ibb.co/X2cnYXH/Jacket5-white-B.png" 
 );
 let item6 = new Constructor(
   6,
   "Naruto",
   "Black and White naruto jacket",
   300,
-  "https://i.postimg.cc/J0zKwy3R/jacket6-white-B.png"
+  "https://i.ibb.co/Z2BrcJW/jacket6-white-B.png" 
 );
 
 //the jackets. push function is pretty obvious this method is responsible for pushing the objects which was created into the array that was created.
